@@ -18,3 +18,13 @@ function unDo() {
     imageDiv.textContent =
         "Hover over an image below to display here.";
 }
+
+function addTabIndex() {
+    console.log("Page loaded! Adding tabindex to images.");
+
+    let images = document.getElementsByClassName("preview");
+
+    for (let i = 0; i < images.length; i++) {
+        images[i].setAttribute("tabindex", "0");
+    }
+}
